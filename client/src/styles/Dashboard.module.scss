@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: -56px;
+    max-width: 400px;
+    width: 100%;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 6px;
+
+      .change_order_container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+
+        .change_order_button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 8px;
+          border-radius: 12px;
+          border: 6px solid #fff;
+          background: #f9f9f9;
+          aspect-ratio: 1;
+          transition: 0.2s;
+          pointer-events: all;
+
+          &:hover {
+            scale: 1.2;
+          }
+        }
+      }
+    }
+
+    .input_container {
+      display: grid;
+      justify-items: end;
+      grid-template-columns: auto max-content;
+      gap: 12px;
+      align-items: center;
+      background: #f9f9f9;
+      height: 120px;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #f9f9f9;
+
+      .currency {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background: #fff;
+        padding: 8px 14px;
+        border-radius: 50px;
+        font-weight: 500;
+        border: 1px solid #dbdbdba0;
+      }
+
+      .balance {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        color: #71717a;
+      }
+
+      &:hover {
+        border: 1px solid #dbdbdba0;
+      }
+
+      input {
+        font-size: 34px;
+        font-weight: 500;
+        width: 100%;
+
+        &::placeholder {
+          color: #c9c9c9;
+        }
+      }
+    }
+  }
+}

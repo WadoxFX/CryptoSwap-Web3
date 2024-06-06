@@ -1,0 +1,58 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  font-weight: 500;
+  transition: 0.2s;
+  width: 100%;
+  gap: 6px;
+
+  &:disabled {
+    opacity: 0.72;
+    color: #000;
+    border: none;
+    background: #bababa;
+  }
+}
+
+.text {
+  font-weight: 400;
+  width: auto;
+}
+
+.contained {
+  background: #000;
+  color: #fff;
+}
+
+.outlined {
+  border: 1px solid #dbdbdb;
+  color: #000;
+
+  &:disabled {
+    border: 1px solid #dbdbdb;
+    opacity: 1;
+    background: none;
+  }
+}
+
+.small {
+  padding: 8px 16px;
+}
+
+.medium {
+  padding: 16px 24px;
+}
+
+.large {
+  padding: 22px 28px;
+}
+
+.rounded {
+  border-radius: 16px;
+}
+
+.round {
+  border-radius: 9999px;
+}

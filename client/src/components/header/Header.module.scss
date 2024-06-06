@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  h1 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .open_aside {
+    padding: 8px 14px;
+    background: #eeeeee2e;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    transition: 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: #eeeeee73;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+$aside_width: 400px;
+
+.aside {
+  width: $aside_width;
+  height: calc(100svh - 26px);
+  transition: 0.5s ease-in-out;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    margin: 16px;
+
+    .user_info {
+      display: flex;
+      gap: 6px;
+      flex-direction: column;
+    }
+  }
+}
+
+.close {
+  width: 0;
+  transform: translateX(calc($aside_width + 12px));
+}
