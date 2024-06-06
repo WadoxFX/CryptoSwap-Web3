@@ -26,3 +26,31 @@ $aside_width: 400px;
   width: 0;
   transform: translateX(calc($aside_width + 12px));
 }
+
+@media only screen and (max-width: 900px) {
+  $aside_width: 300px;
+
+  .aside {
+    width: $aside_width;
+    border: 1px solid var(--border-color);
+  }
+
+  .close {
+    transform: translateX(calc($aside_width + 12px));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  $aside_width: 100%;
+
+  .aside {
+    margin-top: 24px;
+    height: 400px;
+    width: $aside_width;
+    border: 1px solid var(--border-color);
+  }
+
+  .close {
+    transform: translateX(calc($aside_width + 12px));
+  }
+}

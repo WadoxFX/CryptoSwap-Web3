@@ -156,3 +156,14 @@ main {
   display: grid;
   grid-template-rows: max-content auto;
 }
+
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    gap: 24px;
+    grid-template-rows: 1fr;
+  }
+}
